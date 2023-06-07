@@ -3,31 +3,12 @@ package Basics;
 import java.util.Scanner;
 
 public class DecimalComparator {
-    public boolean areEqualByThreeDecimalPlaces(double num1, double num2) {
-        int roundedNum1 = (int) Math.round(num1);
-        int roundedNum2 = (int) Math.round(num2);
-        if (roundedNum1 == roundedNum2) {
-            // System.out.println(roundedNum1);
-            return true;
-        }
-        // System.out.println(roundedNum1);
-        return false;
-    }
 
-    // public boolean areEqualByThreeDecimalPlaces(double num1, double num2) {
-    //     int roundedNum1 = (int) num1*1000;
-    //     int roundedNum2 = (int) num2*1000;
-    //     if (roundedNum1 == roundedNum2) {
-    //         // System.out.println(roundedNum1);
-    //         System.out.println(roundedNum1);
-    //         System.out.println(roundedNum2);
-    //         return true;
-    //     }
-    //     // System.out.println(roundedNum1);
-    //     System.out.println(roundedNum1);
-    //     System.out.println(roundedNum2);
-    //     return false;
-    // }
+    public boolean areEqualByThreeDecimalPlaces(double num1, double num2) {
+        int roundedNum1 = (int) num1*1000;
+        int roundedNum2 = (int) num2*1000;
+        return (roundedNum1 == roundedNum2);
+    }
 
     public static void main(String[] args) {
 
